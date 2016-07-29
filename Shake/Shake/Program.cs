@@ -9,45 +9,27 @@ namespace Shake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1, 3, '*');
-            p1.Draw();
 
-            Point p2 = new Point(4, 5, '#');
-            p2.Draw();
-
-            HorizontLine line = new HorizontLine(5,10,8,'+');
+            HorizontLine line = new HorizontLine(0, 78, 0, '+');
+            HorizontLine line2 = new HorizontLine(0, 78, 24, '+');
+            VerticalLine line3 = new VerticalLine(0, 24, 0, '+');
+            VerticalLine line4 = new VerticalLine(0, 24, 78, '+');
             line.drow();
-
-            VerticalLine line2 = new VerticalLine(6, 11, 9, '-');
             line2.drow();
-           //List <char> charlist = new List<char>();
-           // charlist.Add('*');
-           // charlist.Add('#');
+            line3.drow();
+            line4.drow();
             
-            
-           // List<int> numlist = new List<int>();
-           // numlist.Add(0);
-           // numlist.Add(1);
-           // numlist.Add(2);
+            //Point p = new Point(1, 3, '*');
+            //p1.Draw();
 
-           // int x = numlist[0];
-           // int y = numlist[1];
-           // int z = numlist[2];
-            
-           // char rt = charlist[0];
+            Point p = new Point(4, 5, '*');
+            p.Draw();
 
+            //HorizontLine line = new HorizontLine(5,10,8,'+');
+            //line.drow();
 
-           // foreach (var  i in numlist)
-           // {
-           //     Console.WriteLine(i);
-           // }
-           // numlist.RemoveAt(0);
-
-           // List<Point> plist =new List<Point>();
-           // plist.Add(p1);
-           // plist.Add(p2);
-
-
+            ////VerticalLine line2 = new VerticalLine(6, 11, 9, '-');
+            //line2.drow();
            
             Console.ReadLine();
         }
