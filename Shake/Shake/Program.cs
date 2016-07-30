@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace Shake
 {
@@ -24,7 +25,23 @@ namespace Shake
             
             Shake shake = new Shake(p,4,Direction.RIGHT);
             shake.drow();
-
+            shake.Move();
+            Thread.Sleep(300);
+            shake.Move();
+            Thread.Sleep(300);
+            shake.Move();
+            Thread.Sleep(300);
+            shake.Move();
+            Thread.Sleep(300);
+            shake.Move();
+            Thread.Sleep(300);
+            shake.Move();
+            Thread.Sleep(300);
+            shake.Move();
+            Thread.Sleep(300);
+            shake.Move();
+            Thread.Sleep(300);
+            shake.Move();
 
             Console.ReadLine();
         }
