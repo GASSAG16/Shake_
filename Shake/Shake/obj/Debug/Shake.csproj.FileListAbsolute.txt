@@ -2,6 +2,5 @@ C:\Users\П\AppData\Local\Temporary Projects\Shake\bin\Debug\Shake.exe.config
 G:\swer\Project\Shake_\Shake\Shake\bin\Debug\Shake.exe.config
 G:\swer\Project\Shake_\Shake\Shake\bin\Debug\Shake.exe
 G:\swer\Project\Shake_\Shake\Shake\bin\Debug\Shake.pdb
-G:\swer\Project\Shake_\Shake\Shake\obj\Debug\Shake.csprojResolveAssemblyReference.cache
 G:\swer\Project\Shake_\Shake\Shake\obj\Debug\Shake.exe
 G:\swer\Project\Shake_\Shake\Shake\obj\Debug\Shake.pdb
