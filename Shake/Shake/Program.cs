@@ -19,18 +19,13 @@ namespace Shake
             line3.drow();
             line4.drow();
             
-            //Point p = new Point(1, 3, '*');
-            //p1.Draw();
 
             Point p = new Point(4, 5, '*');
-            p.Draw();
+            
+            Shake shake = new Shake(p,4,Direction.RIGHT);
+            shake.drow();
 
-            //HorizontLine line = new HorizontLine(5,10,8,'+');
-            //line.drow();
 
-            ////VerticalLine line2 = new VerticalLine(6, 11, 9, '-');
-            //line2.drow();
-           
             Console.ReadLine();
         }
     }
