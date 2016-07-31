@@ -29,11 +29,28 @@ namespace Shake
             Shake shake = new Shake(p,4,Direction.RIGHT);
             shake.drow();
 
+
+            FoodCreator FoodCreator  = new FoodCreator (80,25, '$');
+            Point food = FoodCreator.CreateFood();
+            food.Draw();
+
+
             while (true)
             {
+                if (shake.Eat(food))
+                {
+                   food=FoodCreator.CreateFood();
+                   food.Draw();
+                }
+                else
+                {
+                    shake.Move();
+                }
+                Thread.Sleep(100);
+
                 if (Console.KeyAvailable)
                 {
-                    ConsoleKeyInfo key = Console.ReadKey();
+                    ConsoleKeyInfo key = Console.ReadKey(true);
                     shake.HandleKey(key.Key);
                 }
                 Thread.Sleep(100);
