@@ -16,5 +16,24 @@ namespace Shake
                 p.Draw();
             }
         }
+        internal bool IsHit(Figura figura)
+        {
+            foreach (var p in tlist)
+            {
+                if (figura.IsHit(p))
+                    return true;
+            }
+            return false;
+            
+        }
+        private bool IsHit(Point point)
+        {
+            foreach (var p in tlist)
+            {
+                if (p.IsHit(point))
+                    return true;
+            }
+            return false;
+        }
     }
 }

@@ -63,6 +63,17 @@ namespace Shake
             else
                 return false;
         }
+        
+        internal bool IsHitTail()
+        {
+            var head = tlist.Last();
+            for (int i = 0; i < tlist.Count-2; i++)
+            {
+                if (head.IsHit(tlist[i]))
+                return true;
+            }
+                return false;     
+        }
 
     }
 }
